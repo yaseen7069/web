@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+.group
+{
+	margin-bottom:15px;
+}
+.button
+{
+text-align:center;
+}
+</style>
+<h1 align="center">REGISTRATION FORM</h1>
+</head>
+<body>
+<form>
+<fieldset>
+<legend>User Information</legend>
+<div class="name">
+<label for="name">Name</label>&nbsp;
+<select id="title"name="title">
+<option>Mr.</option>
+<option>Mrs.</option>
+</select>
+<input type="text"id="name"name="name"required><br><br>
+</div>
+
+<div class="group">
+<label for="Phone">Phone</label><br>
+<input type="tel"id="phone"name="phone"required>
+<label for"Email">Email</label>
+<input type="Email"id="email_id"name="email"required><br>
+</div>
+</fieldset>
+<div>
+<div class="group">
+<label for="Address">Address</label>&nbsp;&nbsp;&nbsp;
+<textarea name="address"required></textarea>
+<div><br>
+<div class="group">
+<label>Gender</label>&nbsp;&nbsp;&nbsp;
+<input type="radio"name="gender"value="male"required>Male
+<input type="radio"name="gender"value="female"required>female
+<input type="radio"name="gender"value="others"required>others
+</div><br>
+<div class="group">
+<label>Language known</label>&nbsp;
+<input type="checkbox"name="language"value="english"required>English
+<input type="checkbox"name="language"value="malayalam"required>Malayalam
+<input type="checkbox"name="language"value="hindi"required>Hindi
+</div><br>
+<div class="group">
+<label>Course</label>
+<select id="course"name="course"required>
+<option>course</option>
+<option>MBA</option>
+<option>MCA</option>
+</select>
+</div><br>
+<div class="button">
+<input type="reset"value="Reset">
+<input type="submit"value="Submit">
+</div>
+
+</form>
+</body>
+</html>
