@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag to Change Image</title>
+
+    <style>
+        body {
+            background-color: #f6f6f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .oval-frame {
+            width: 300px;
+            height: 400px;
+            border-radius: 50%;
+            padding: 12px;
+            background-color: white;
+            border: 5px solid #4d7a43;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .oval-frame img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #a7d3a0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="oval-frame" id="imageContainer">
+        <img id="mainImage" src="hotairbaoloon.jpeg" draggable="true">
+    </div>
+
+   <script>
+    let img = document.getElementById("mainImage");
+    let img1 = "hotairbaoloon.jpeg";
+    let img2 = "machupichu.jpeg";
+    let img3 = "images.jpeg";
+    img.addEventListener("mouseenter", function () {
+        img.src = img2;
+    });
+    img.addEventListener("mouseleave", function () {
+        img.src = img3;
+    });
+</script>
+
+</body>
+</html>
+ 
