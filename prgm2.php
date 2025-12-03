@@ -1,13 +1,20 @@
 <?php
-$students=array("Prithik","Shanu","Safwan","Albin","Yaseen");
-echo "<h2>Array Before Sorting:</h2>";
-print_r($students);
-echo"<br><br>";
-asort($students);
-echo"<h2>Array After Ascending Sorting (asort):</h2>";
-print_r($students);
-echo"<br><br>";
-arsort($students);
-echo"<h2>Array After Descending Sorting(asort):</h2>";
-print_r($students);
+$IndianPlayers = array("MS Dhoni", "Yuvaraj Singh", "Virat Kohli", "Ravindra Jadeja", "Rishab Pant");
+
+echo "<table border='1'>
+<tr>
+    <th>SL NO</th>
+    <th>Players Name</th>
+</tr>";
+
+$s1 = 1;
+foreach ($IndianPlayers as $player) {
+    echo "<tr>
+        <td>$s1</td>
+        <td>$player</td>
+    </tr>";
+    $s1++;
+}
+
+echo "</table>";
 ?>
